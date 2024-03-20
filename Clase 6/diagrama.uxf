@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>90</y><w>210</w><h>130</h></coordinates><panel_attributes>Empleado
+--
+- String DNI 
+-String nombre  
+-String apellido
+-int anioDeIngreso
+-TipoContrato tipoContrato
+--
++mostrarSalario pass</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>350</y><w>210</w><h>110</h></coordinates><panel_attributes>EmpleadoComision
+--
+-float salarioMinimo 
+-int clientesCaptados 
+-float montoPorCliente
+--
++empleadoConMasClientes()
++mostrarSalario()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>350</y><w>210</w><h>100</h></coordinates><panel_attributes>EmpleadoFijo
+--
+-float sueldoBasico 
+-float porcentajeAdicional
+-Antiguedad antiguedad
+--
++mostrarSalario()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>210</y><w>150</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;140;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>210</y><w>170</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>80</y><w>120</w><h>80</h></coordinates><panel_attributes>&lt;Enum&gt;
+TipoContrato
+--
+COMI = "Comision"
+FIJO = "Sueldo Fijo"
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>350</y><w>170</w><h>90</h></coordinates><panel_attributes>&lt;Enum&gt;
+Antiguedad
+--
+CAT1 = "Menos de 2 anios"
+CAT2 = "de 2 a 5 anios"
+CAT3 = "Mas de 5 anios"
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>110</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>380</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element></diagram>
